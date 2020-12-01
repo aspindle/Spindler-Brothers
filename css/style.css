@@ -213,6 +213,48 @@ textarea:focus, input:focus{
     transform: translate(-50%, -50%);
 }
 
+
+
+
+
+.custom-container {
+  font-family: 'Libre Baskerville', serif;
+  text-shadow: 0px 0px 10px #FFF;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-container p {
+  font-size: 5rem;
+  padding: 0.5rem;
+  
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.custom-container p span.typed-text {
+  font-weight: bold;
+  color: #000;
+}
+.custom-container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.custom-container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
 /* Media query section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -271,8 +313,10 @@ textarea:focus, input:focus{
     }
 }
 
+
+
 @media screen and (max-width:500px) {
-    .intro-text {
+    .custom-container p {
         font-size: 30px;
     }
     .portfolio-section img {
