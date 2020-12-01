@@ -271,6 +271,18 @@ textarea:focus, input:focus{
     }
 }
 
+@media screen and (max-width:500px) {
+    .intro-text {
+        font-size: 30px;
+    }
+    .portfolio-section img {
+        width: 300px;
+    }
+    .showcase-form {
+        width: 300px;
+    }
+}
+
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
