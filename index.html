@@ -3,151 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="javascript" href="js/index.js">
     <title>Spindler Brothers</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">Spindler Brothers</h1>
-            <nav>
-                <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a href="estimates.html">Estimates</a></li>
-                    <li> <a href="contact.html">Contact</a></li>
-
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <!-- Showcase -->
-    <section class="showcase">
-        <div class="container grid">
-            <div class="showcase-text">
-                <h1>Garage Door Experts</h1>
-                <p>Something else is here and im curious as to if this will change on the final site.
-                </p>
-                <a href="estimates.html" class="btn btn-outline">Read More</a>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Spindler Brothers</a>
             </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+		
+    <section class="home">
+			<div class="intro"><p class="intro-text">We build websites.</p></div>
+    </section>
+		
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+            
+        <section class="AboutUs">
+            <p id="about" class="hidden">test</p>
+            <h1 class="myH2">About Us</h1>
+            
+            <div class="socials">
+                
+                <img class="hidden" src="imgs/david.jpg" alt="david avatar">
+                <div class="myContainer">
+                    <img src="imgs/alex.jpg" alt="alex avatar">
+                    <div class="centered">
+                        <a href="https://www.linkedin.com/in/alex-spindler/" target="_blank" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <img class="hidden" src="imgs/david.jpg" alt="david avatar">
+                <div class="myContainer">
+                    <img src="imgs/david.jpg" alt="david avatar">
+                    <div class="centered">
+                        <a href="https://www.linkedin.com/in/davidspindler12345/" target="_blank" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <img class="hidden" src="imgs/david.jpg" alt="david avatar">
+            </div>
+            
+				<p class="myP">	
+                Spindler Brothers is a full-service website design agency based in Southern California. Established in November 2020, cofounders (and brothers) Alex and David believe the end user experience is of the utmost importance. Alex graduated with a degree in Computer Science from UC San Diego and David gradutated with a degree in Mathematics from Westmont College in Santa Barbara. Spindler Brothers is eager to  get your next website up and running! </p>
+                <p class="myP">
+                
+            </p>
+        </section>
 
+        <section class="Portfolio">
+            <p id="portfolio" class="hidden">test</p>
+            <h1 class="myH2">Portfolio</h1>
+            
+            <div class="portfolio-section">
+                <div class="card">
+                <a href="https://gallant-kirch-690c66.netlify.app" target="_blank">
+                    <img src="imgs/garcia.png" alt="garcia image">
+                </a>
+                </div>
+            </div>
+				
+        </section>
+
+        <section class="Services">
+            <p id="services" class="hidden">test</p>
+            <h1 class="myH2">Services</h1>
+            
+            
+				<p class="myP">	
+                Spindler Brothers currently offers website design services. Our pricing varies depending on the scope of the website. Feel free to reach out to us below to discuss further details. </p>
+                <p class="myP">
+                
+            </p>
+        </section>
+
+        <section class="Contact">
+            <p id="contact" class="hidden">test</p>
+            <h1 class="myH2">Contact Us</h1>
+            
             <div class="showcase-form card">
-                <h2>Request a Demo</h2>
-                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <h2>Get in Touch!</h2>
+                <form name='contact' method='POST'>
                     <input type="hidden" name="form-name" value="contact">
                     <p class="hidden">
                         <label>Don't fill this out if your human: <input name="bot-field" /></label>
                     </p>
                     <div class="form-control">
                         <input type="text" name="name"
-                        placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company"
-                        placeholder="Company Name" required>
+                        placeholder="Your Name" required>
                     </div>
                     <div class="form-control">
                         <input type="email" name="email"
-                        placeholder="Email" required>
+                        placeholder="Your Email" required>
                     </div>
+                    <div class="form-control">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                        <small>Format: 123-456-7889</small><br><br>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="text"
+                        placeholder="Your Message" required>
+                    </div>
+                    
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stats -->
-    <section class="stats">
-        <div class="container">
-            <h3 class="stats-heading text-center my-1">
-                This is the best website in alll of existence dont deny it you know it to be truw.
-            </h3>
+        <section class="Footer">
+            
+            <p>© SpindlerBrothers.com. All Rights Reserved.</p>
+            
+            
+        </section>
+    </div>
 
-            <div class="grid grid-3 text-center my-4">
-                <div>
-                    <i class="fas fa-server fa-3x"></i>
-                    <h3>10,349,405</h3>
-                    <p class="text-secondary">Deployments</p>
-                </div>
-                <div>
-                    <i class="fas fa-upload fa-3x"></i>
-                    <h3>987 TB</h3>
-                    <p class="text-secondary">Published</p>
-                </div>
-                <div>
-                    <i class="fas fa-project-diagram fa-3x"></i>
-                    <h3>2,344,265</h3>
-                    <p class="text-secondary">Projects</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Cli-->
-    <section class="cli">
-        <div class="container grid">
-        <img src="images/spinning_doge.gif" alt="">
-        <div class="card">
-            <h3>Easy to use, cross platform CLI</h3>
-            </div>
-            <div class="card">
-                <h3> Deploy in Seconds</h3>
-                </div>
-            </div>
-    </section>
-    <!-- Cloud -->
-    <section class="cloud bg-primary my-2 py-2">
-        <div class="container grid">
-            <div class="text-center">
-                <h2 class="lg">Extreme Cloud Hosting</h2>
-                <p class="lead my-1">Clould hosting like you've never seen. Fast efficient and scalable</p>
-                <a href="estimates.html" class="btn btn-tirtiary">Read </a>
-            </div>
-            <img src="images/spinning_doge.gif" alt="no cloud">
-        </div>
-    </section>
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 
-    <!--Languages-->
-    <section class="languages">
-        <h2 class="md text-center my-2">
-            Supported languages
-        </h2>
-        <div class="container flex">
-            <div class="card">
-                <h4>Feature 1</h4>
-                <img src="images/spinning_doge.gif" alt="">
-            </div>
-            <div class="card">
-                <h4>Feature 2</h4>
-                <img src="images/spinning_doge.gif" alt="">
-            </div>
-        </div>
-    </section>
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
 
-    <!-- Footer -->
-    <footer class="footer bg-tirtiary py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Garcia Doors Inc.
-                </h1>
-                <p> Copyright &copy; 2020 | Lic # 9634344</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="estimates.html">Estimates</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-            </div>
-        </div>
-    </footer>
+    <script>
+        $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+        });
+    </script>
+
+    <script>
+        $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault()
+
+        $('html, body').animate(
+            {
+            scrollTop: $($(this).attr('href')).offset().top,
+            },
+            500,
+            'linear'
+        )
+        })
+    </script>
 </body>
 </html>
+
