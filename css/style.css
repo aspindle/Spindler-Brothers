@@ -120,6 +120,7 @@ body {
     border-radius: 50%;
 }
 .portfolio-section {
+    margin-top:20px;
     display: flex;
 }
 .portfolio-section img {
